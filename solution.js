@@ -6,11 +6,17 @@ euroCities.pop();
 euroCities.push("Budapest");
 
 console.log(euroCities.length);
+console.log(euroCities);
 
 const asianCities = ["Ming", "Mang", "Ding", "Dong", "Ching"];
 
-// const worldCitiesString = euroCities + euroCities.push(asianCities);
-
 const worldCities = euroCities.concat(asianCities);
-
 console.log(worldCities);
+const worldCitiesRev = worldCities.reverse();
+
+worldCities.splice(2, 1);
+console.log(worldCities);
+
+const asianCitiesNew = asianCities.splice(1, 4);
+
+console.log(asianCitiesNew);
