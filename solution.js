@@ -17,6 +17,18 @@ const worldCitiesRev = worldCities.reverse();
 worldCities.splice(2, 1);
 console.log(worldCities);
 
-const asianCitiesNew = asianCities.splice(1, 4);
+const asianCitiesNew = asianCities.splice(2, 4);
 
 console.log(asianCitiesNew);
+
+worldCities[2] = "Toronto";
+
+// console.log(worldCities);
+
+worldCities.splice(1, 0, "Washington");
+
+// console.log(worldCities);
+
+const allTogetherString = worldCities.join(" ");
+
+// console.log(allTogetherString);
